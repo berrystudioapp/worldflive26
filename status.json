@@ -1,0 +1,127 @@
+[
+  {
+    "com.hm.livescore": {
+      "ads_list": ["am"],
+      "am_ba": "ca-app-pub-3940256099942544/6300978111",
+      "am_in": "ca-app-pub-3940256099942544/1033173712",
+      "am_na": "ca-app-pub-3940256099942544/2247696110",
+      "app_id": "",
+
+      "interval": 50001,
+      "is_id": "",
+      "get_channel_via_link": true,
+      "stats_url": "data/africa2023/st",
+      "live_display_duration": 120,
+
+      "status":2,
+      "version_code":1,
+      "update_info":{
+        "update_title":"A new version is available",
+        "button_name":"Update app",
+        "des":"Watch 2024 Live Football TV HD online free on TV. Latest update for the standing, Lineups, Squad and much more from the world of football.",
+        "package":"football.live.tv",
+        "update_button":"Update now",
+        "icon":"https://raw.githubusercontent.com/hmstddb/footballtv247/master/ad/icon.png",
+        "app_name":"Live Football HD"
+      }
+    },
+    "com.plive.tv.debug": {
+      "ads_list": [""],
+      "am_in": "",
+      "app_id": "",
+
+      "interval": 45000,
+      "is_id": "",
+      "get_channel_via_link": true,
+      "stats_url": "data/africa2023/st",
+      "channel_br": "data/premier/br",
+      "channel_league_id": 290,
+      "sub_id_list": [2099, 2087, 2087, 2091, 2088, 2145, 2156, 2156, 2088, 2091, 2092, 2089, 2087, 2088, 2095, 2098, 2085, 2102, 2095, 2102, 2106, 2100, 2086, 2102, 2157, 2104, 2092, 2094, 2156, 2103, 2102, 2102, 2091, 2108, 2087, 2102, 2104, 2099, 2156, 2106, 2091, 2091, 2108, 2103, 2102, 2102, 2091, 2154, 2156, 2095, 2098, 2088, 2087, 2108, 2103, 2106, 2087, 2106, 2157, 2091, 2099, 2091, 2140, 2106, 2091, 2098, 2095, 2102, 2085, 2102, 2095, 2142, 2106, 2091, 2098, 2150, 2150, 2165, 2098, 2103, 2142, 2166, 2088],
+      "match_update_url": "data/asian2023tv/match"
+    }
+  },
+  {
+    "common": {
+      "nationFlag":
+        {
+          "Manchester United":"https://ssl.gstatic.com/onebox/media/sports/logos/5FQBXpID1LAQJb0BOnmTpw_96x96.png",
+          "Napoli":"https://ssl.gstatic.com/onebox/media/sports/logos/PWRLYBJqlGrAAsKkUN6eng_96x96.png",
+          "Arsenal":"https://ssl.gstatic.com/onebox/media/sports/logos/4us2nCgl6kgZc0t3hpW75Q_96x96.png",
+          "Crystal Palace":"https://ssl.gstatic.com/onebox/media/sports/logos/8piQOzndGmApKYTcvyN9vA_96x96.png",
+          "Malta":"https://ssl.gstatic.com/onebox/media/sports/logos/CBxrCxiBkSddrBEWZWQNzw_96x96.png",
+          "Italy":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/450px-Flag_of_Italy.svg.png",
+          "Hellas Verona":"https://ssl.gstatic.com/onebox/media/sports/logos/Y23PEIJgTvK3Qpm9il1MGA_96x96.png",
+          "Sampdoria":"https://ssl.gstatic.com/onebox/media/sports/logos/E8bC8MBR8FwSP3ONEhMxjw_96x96.png",
+          "Torino":"https://ssl.gstatic.com/onebox/media/sports/logos/ovE3HSEx4GWXkW8GU7KVhA_96x96.png",
+          "Lazio":"https://ssl.gstatic.com/onebox/media/sports/logos/jcKKlUVaNw3br9cIyOKmQA_96x96.png",
+          "Roma":"https://ssl.gstatic.com/onebox/media/sports/logos/BQdP4jUBFJfG7U_JBsFIMg_96x96.png",
+          "Internazionale":"https://ssl.gstatic.com/onebox/media/sports/logos/l2-icwsMhIvsbRw8AwC1yg_96x96.png",
+          "Juventus":"https://ssl.gstatic.com/onebox/media/sports/logos/Lv6xmBlUIpN3GAFhtf6nqQ_96x96.png",
+          "Barcelona":"https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_96x96.png",
+          "Real Madrid":"https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",
+          "PSG":"https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png",
+          "Montpellier":"https://ssl.gstatic.com/onebox/media/sports/logos/fL5Nk_2eUanYiOSB9AnBpQ_96x96.png",
+          "Getafe":"https://ssl.gstatic.com/onebox/media/sports/logos/1UDHZMdKZD15W5gus7dJyg_96x96.png",
+          "Man City":"https://ssl.gstatic.com/onebox/media/sports/logos/z44l-a0W1v5FmgPnemV6Xw_96x96.png",
+          "Chelsea":"https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png",
+          "Sevilla":"https://ssl.gstatic.com/onebox/media/sports/logos/hCTs5EX3WjCMC5Jl3QE4Rw_96x96.png",
+          "Inter":"https://ssl.gstatic.com/onebox/media/sports/logos/l2-icwsMhIvsbRw8AwC1yg_96x96.png",
+          "Milan":"https://ssl.gstatic.com/onebox/media/sports/logos/VoKsJ6RitaHGhsM62e6AXQ_96x96.png",
+          "Korea Republic U20":"https://i.imgur.com/e0Lfh9D.png",
+          "Brazil11":"https://ssl.gstatic.com/onebox/media/sports/logos/zKLzoJVYz0bb6oAnPUdwWQ_96x96.png",
+          "Germany11":"https://ssl.gstatic.com/onebox/media/sports/logos/h1FhPLmDg9AHXzhygqvVPg_96x96.png",
+          "Colombia":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/255px-Flag_of_Colombia.svg.png",
+          "Nigeria": "https://i.imgur.com/hFRHGBX.png",
+          "Vietnam U23": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1280px-Flag_of_Vietnam.svg.png",
+          "Qatar U23": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/255px-Flag_of_Qatar.svg.png",
+          "Australia U23": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/2560px-Flag_of_Australia.svg.png",
+          "Jordan U23": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/255px-Flag_of_Jordan.svg.png",
+          "Scotland11": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/255px-Flag_of_Scotland.svg.png",
+          "Albania11": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/255px-Flag_of_Albania.svg.png",
+          "Slovenia11": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Flag_of_Slovenia.svg/255px-Flag_of_Slovenia.svg.png",
+          "Austria11": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/255px-Flag_of_Austria.svg.png",
+          "Romania11": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/225px-Flag_of_Romania.svg.png",
+          "Slovakia11": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/225px-Flag_of_Slovakia.svg.png",
+          "Ukraine11": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/255px-Flag_of_Ukraine.svg.png",
+          "Czech Republic11": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/640px-Flag_of_the_Czech_Republic.svg.png",
+          "Turkey11": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/255px-Flag_of_Turkey.svg.png",
+          "Peru": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/255px-Flag_of_Peru.svg.png",
+          "Chile": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/255px-Flag_of_Chile.svg.png",
+          "Venezuela": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/255px-Flag_of_Venezuela.svg.png",
+          "Jamaica": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/255px-Flag_of_Jamaica.svg.png",
+          "Panama": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/255px-Flag_of_Panama.svg.png",
+          "Bolivia": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/255px-Flag_of_Bolivia.svg.png",
+          "Paraguay": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/255px-Flag_of_Paraguay.svg.png",
+          "Korea Republic U23": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/255px-Flag_of_South_Korea.svg.png"
+        },
+        "channel_info":{
+          "123ecast":{
+            "name":"123ecast",
+            "logo":"HbiakTK",
+            "des":"720p"
+          },
+          "gocast2":{
+            "name":"gocast2",
+            "logo":"xeZBWOy",
+            "des":"1080p"
+          },
+          "cyfostreams":{
+            "name":"",
+            "logo":"E9IuO1X",
+            "des":"Full Hd"
+          },
+          "seegames":{
+            "name":"seegames",
+            "logo":"PjdwPnq",
+            "des":"HD Stream"
+          },
+          "77.247.109.15":{
+            "name":"cyfostreams",
+            "logo":"5NVLPzn",
+            "des":"HD Primary"
+          }
+        },
+        "stream_logo": ["Co5QV0G", "WXCjI0P", "VR911T8", "wUQ8Adf"]      
+    }
+  }
+]
