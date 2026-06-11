@@ -26,14 +26,14 @@
       }
     },
     "com.hm.livescore": {
-      "ads_list": ["am"],
+      "ads_list": ["am", "is"],
       "am_ba": "ca-app-pub-9640436393722761/6130298226",
       "am_in": "ca-app-pub-9640436393722761/2708218109",
       "am_na": "ca-app-pub-9640436393722761/3504134882",
       "app_id": "ca-app-pub-9640436393722761~2976350417",
 
-      "interval": 50001,
-      "is_id": "",
+      "interval": 50000,
+      "is_id": "26b377e6d",
       "get_channel_via_link": true,
       "stats_url11": "data/africa2023/st",
       "live_display_duration": 120,
