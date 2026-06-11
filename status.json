@@ -25,6 +25,31 @@
         "app_name":"Live Football HD"
       }
     },
+    "com.hm.livescore": {
+      "ads_list": ["am"],
+      "am_ba": "ca-app-pub-9640436393722761/6130298226",
+      "am_in": "ca-app-pub-9640436393722761/2708218109",
+      "am_na": "ca-app-pub-9640436393722761/3504134882",
+      "app_id": "ca-app-pub-9640436393722761~2976350417",
+
+      "interval": 50001,
+      "is_id": "",
+      "get_channel_via_link": true,
+      "stats_url11": "data/africa2023/st",
+      "live_display_duration": 120,
+
+      "status":2,
+      "version_code":1,
+      "update_info":{
+        "update_title":"A new version is available",
+        "button_name":"Update app",
+        "des":"Watch 2024 Live Football TV HD online free on TV. Latest update for the standing, Lineups, Squad and much more from the world of football.",
+        "package":"football.live.tv",
+        "update_button":"Update now",
+        "icon":"https://raw.githubusercontent.com/hmstddb/footballtv247/master/ad/icon.png",
+        "app_name":"Live Football HD"
+      }
+    },
     "com.plive.tv.debug": {
       "ads_list": [""],
       "am_in": "",
