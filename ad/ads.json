@@ -1,19 +1,19 @@
 {
   "adsApp": [
     {
-      "icon": "https://raw.githubusercontent.com/hmstddb/footballhd/master/ad/icon.png",
-      "cover": "https://raw.githubusercontent.com/hmstddb/footballhd/master/ad/graphic.png",
-      "appName": "Flashscore",
-      "description": "Watch 2024 Football Live online free on TV. Latest update for the standing, Lineups, Squad and much more from the world of football",
-      "package": "eu.livesport.FlashScore_com",
+      "icon": "https://raw.githubusercontent.com/livescoretv/minlivescore/master/ad/icon1.png",
+      "cover": "https://raw.githubusercontent.com/livescoretv/minlivescore/master/ad/graphic1.png",
+      "appName": "World Football Cup 2026 Live",
+      "description": "Watch World Cup 2026 Live online free on TV. Latest update for the standing, Lineups, Squad and much more from the world of football",
+      "package": "world.football.cup",
       "link": "",
       "actionText": "VISIT APP",
       "type": "app"
     },{
-      "icon": "https://raw.githubusercontent.com/hmstddb/footballhd/master/ad/icon1.png",
-      "cover": "https://raw.githubusercontent.com/hmstddb/footballhd/master/ad/graphic1.png",
-      "appName": "Africa Cup 2023",
-      "description": "Latest update for the standing, Lineups, Squad, Yellow and red cards, Field formations, Match statistics, Top-scorer, City and stadium information",
+      "icon": "https://raw.githubusercontent.com/livescoretv/minlivescore/master/ad/icon.png",
+      "cover": "https://raw.githubusercontent.com/livescoretv/minlivescore/master/ad/graphic.png",
+      "appName": "Flashscore",
+      "description": "Watch 2024 Football Live online free on TV. Latest update for the standing, Lineups, Squad and much more from the world of football",
       "package": "eu.livesport.FlashScore_com",
       "link": "",
       "actionText": "VISIT APP",
