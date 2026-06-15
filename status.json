@@ -39,15 +39,15 @@
       "live_display_duration": 120,
 
       "status":2,
-      "version_code":1,
+      "version_code":16,
       "update_info":{
         "update_title":"A new version is available",
         "button_name":"Update app",
-        "des":"Watch 2024 Live Football TV HD online free on TV. Latest update for the standing, Lineups, Squad and much more from the world of football.",
-        "package":"football.live.tv",
+        "des":"World Cup 2026 Live streaming online free on TV. Latest update for the standing, Lineups, Squad and much more from the world of football.",
+        "package":"com.hm.livescore",
         "update_button":"Update now",
-        "icon":"https://raw.githubusercontent.com/hmstddb/footballtv247/master/ad/icon.png",
-        "app_name":"Live Football HD"
+        "icon":"https://raw.githubusercontent.com/berrystudioapp/worldflive26/master/app/icon3.png",
+        "app_name":"World Cup 2026 Live"
       }
     },
     "com.plive.tv.debug": {
