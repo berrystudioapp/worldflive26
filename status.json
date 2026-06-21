@@ -1,16 +1,20 @@
 [
   {
     "com.nationleague.livescore": {
-      "ads_list": ["am"],
+      "ads_list": ["am11"],
       "am_ba": "ca-app-pub-3940256099942544/6300978111",
       "am_in": "ca-app-pub-3940256099942544/1033173712",
       "am_na": "ca-app-pub-3940256099942544/2247696110",
       "app_id": "",
 
+      "fi_url": "data/wc2026/fi",
+      "sq_url": "data/wc2026/sq",
+      "fit_url": "data/wc2026",
+
       "interval": 50000,
       "is_id": "",
       "get_channel_via_link": true,
-      "stats_url": "data/africa2023/st",
+      "stats_url111": "data/wc2026/st",
       "live_display_duration": 120,
 
       "status":2,
