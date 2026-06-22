@@ -20,7 +20,7 @@
       "get_channel_via_link": true,
       "stats_url111": "data/wc2026/st",
       "fi_url": "data/wc2026/fi",
-      
+
       "live_display_duration": 120,
 
       "status":2,
@@ -46,7 +46,7 @@
       "is_id": "26b377e6d",
       "get_channel_via_link": true,
       "stats_url11": "data/africa2023/st",
-      "fi_url": "data/wc2026/fi",
+      "fi_url111": "data/wc2026/fi",
 
 
       "live_display_duration": 120,
