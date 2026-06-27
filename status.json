@@ -42,8 +42,8 @@
       "interval": 50000,
       "is_id": "26b377e6d",
       "get_channel_via_link": true,
-      "fi_url111": "data/wc2026/fi",
-      "sta_url111": "data/wc2026/sta",
+      "fi_url": "data/wc2026/fi",
+      "sta_url": "data/wc2026/sta",
 
       "live_display_duration": 120,
 
