@@ -1,7 +1,7 @@
 [
   {
     "com.nationleague.livescore": {
-      "ads_list": ["am11"],
+      "ads_list": ["am"],
       "am_ba": "ca-app-pub-3940256099942544/6300978111",
       "am_in": "ca-app-pub-3940256099942544/1033173712",
       "am_na": "ca-app-pub-3940256099942544/2247696110",
@@ -14,7 +14,7 @@
       "fi_url": "data/wc2026/fi",
       "sta_url": "data/wc2026/sta",
 
-      "interval": 50000,
+      "interval": 5000,
       "is_id": "",
       "get_channel_via_link": true,
 
