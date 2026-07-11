@@ -14,7 +14,7 @@
       "fi_url": "data/wc2026/fi",
       "sta_url": "data/wc2026/sta",
 
-      "interval": 5000,
+      "interval": 50000,
       "is_id": "",
       "get_channel_via_link": true,
 
