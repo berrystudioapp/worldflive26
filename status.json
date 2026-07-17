@@ -54,15 +54,15 @@
 
 
       "status":2,
-      "version_code":17,
+      "version_code":50,
       "update_info":{
         "update_title":"A new version is available",
         "button_name":"Update app",
         "des":"World Cup 2026 Live streaming online free on TV. Latest update for the standing, Lineups, Squad and much more from the world of football.",
-        "package":"com.hm.livescore",
+        "package":"world.football.cup",
         "update_button":"Update now",
-        "icon":"https://raw.githubusercontent.com/berrystudioapp/worldflive26/master/app/icon3.png",
-        "app_name":"World Cup 2026 Live"
+        "icon":"https://raw.githubusercontent.com/berrystudioapp/worldflive26/master/ad/icon3.png",
+        "app_name":"World Cup 2026 Live Streaming"
       }
     },
     "com.plive.tv.debug": {
