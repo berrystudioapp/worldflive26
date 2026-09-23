@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy BirthDay</title>
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/qvjz8QFW/Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <div class="lock-screen" id="lock-screen">
+    <div class="lock-content">
+      <div class="lock-image">
+        <img src="style/img/Anh Pass.jpg" alt="Pass Image">
+      </div>
+      <div class="lock-form">
+        <div class="lock-icon">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <p style="color: #d81c60; font-family: 'Dancing Script', cursive; font-weight: 800; font-size: 1.7rem; margin-bottom: 25px;text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+          <!-- <p style="color: #d81c60;font-weight: 800; font-size: 1.2rem; margin-bottom: 25px; text-align: center; letter-spacing: 1px;"> -->
+        Mật khẩu là ngày sinh của anh
+    </p>
+    
+        <div class="pass-dots" id="pass-dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="numpad">
+          <button class="num-btn" data-value="1">1</button>
+          <button class="num-btn" data-value="2">2</button>
+          <button class="num-btn" data-value="3">3</button>
+          <button class="num-btn" data-value="4">4</button>
+          <button class="num-btn" data-value="5">5</button>
+          <button class="num-btn" data-value="6">6</button>
+          <button class="num-btn" data-value="7">7</button>
+          <button class="num-btn" data-value="8">8</button>
+          <button class="num-btn" data-value="9">9</button>
+          <button class="num-btn blank"></button>
+          <button class="num-btn" data-value="0">0</button>
+          <button class="num-btn delete-btn"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container main-content-hidden" id="main-content">
+    <div class="menu">
+      <button class="menu-item" id="btn-music">
+        <span class="icon"><img src="style/img/asset/music.png" alt="Music" /></span>
+        <span>Music</span>
+      </button>
+      <button class="menu-item" id="btn-letter">
+        <span class="icon"><img src="style/img/asset/letter.png" alt="Letter" /></span>
+        <span>Letter</span>
+      </button>
+      <button class="menu-item" id="btn-image">
+        <span class="icon"><img src="style/img/asset/image.png" alt="Image" /></span>
+        <span>Image</span>
+      </button>
+      <button class="menu-item" id="btn-gift">
+        <span class="icon"><img src="style/img/asset/gift.png" alt="Gift" /></span>
+        <span>Gift</span>
+      </button>
+    </div>
+
+  </div>
+
+  <button class="reset-lock-btn" id="btn-reset-lock">
+    <i class="fa-solid fa-lock"></i>
+  </button>
+
+  <div class="overlay" id="letter-overlay">
+    <div class="letter-modal">
+      <button class="close-btn" id="close-letter"><i class="fa-solid fa-xmark"></i></button>
+      <div class="letter-content">
+        <div class="letter-body" id="letter-body"></div>
+      </div>
+      <img src="https://i.pinimg.com/originals/4e/89/d3/4e89d3e4ec4b1f59b1664e880a875c65.gif" alt="Decoration"
+        class="letter-gif" />
+    </div>
+  </div>
+
+  <div class="overlay" id="music-overlay">
+    <div class="music-modal">
+      <button class="close-btn" id="close-music"><i class="fa-solid fa-xmark"></i></button>
+      <div class="spotify-player">
+        <div class="player-header">
+          <img src="style/img/asset/music.png" alt="Spotify" class="spotify-logo" />
+          <span>Music Player</span>
+        </div>
+        <div class="now-playing">
+          <div class="song-info">
+            <div class="album-art" id="album-art">
+              <img src="" alt="Album Art" />
+            </div>
+            <div class="song-details">
+              <h3 id="song-title">Select a song</h3>
+              <p id="song-artist">Artist name</p>
+            </div>
+          </div>
+
+          <div class="player-controls">
+            <div class="progress-container">
+              <span id="current-time">0:00</span>
+              <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+              </div>
+              <span id="duration">0:00</span>
+            </div>
+
+            <div class="control-buttons">
+              <button class="ctrl-btn" id="prev-btn"><i class="fa-solid fa-backward-step"></i></button>
+              <button class="ctrl-btn play-pause" id="play-pause-btn">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <button class="ctrl-btn" id="next-btn"><i class="fa-solid fa-forward-step"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="song-list" id="song-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="image-overlay">
+    <div class="image-modal">
+      <button class="close-btn" id="close-image"><i class="fa-solid fa-xmark"></i></button>
+      <div class="gallery-container">
+        <div class="gallery-row row-top" id="gallery-top"></div>
+        <div class="gallery-row row-bottom" id="gallery-bottom"></div>
+      </div>
+      <div class="gallery-gif-wrapper top">
+        <img src="https://i.pinimg.com/originals/3f/4e/d3/3f4ed3cb1539cb42dc93b78020a3ef55.gif" alt="Decoration"
+          class="gallery-gif" />
+        <div class="flying-text text-right">
+          <!-- HAPPY INTERNATIONAL WOMEN'S DAY -->
+          HAPPY BIRTHDAY TO YOU
+        </div>
+      </div>
+
+      <div class="gallery-gif-wrapper bottom">
+        <div class="flying-text text-left">
+          <!-- HAPPY INTERNATIONAL WOMEN'S DAY -->
+          HAPPY BIRTHDAY TO YOU
+        </div>
+        <img src="https://i.pinimg.com/originals/0f/f7/ac/0ff7acbadeffd1e41be9811d67e1697e.gif" alt="Decoration"
+          class="gallery-gif" />
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="lightbox-overlay" style="z-index: 2000">
+    <div class="lightbox-content">
+      <button class="close-btn" id="close-lightbox"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" alt="Full View" id="lightbox-img" />
+    </div>
+  </div>
+
+  <div class="overlay" id="gift-overlay">
+    <div class="gift-modal" id="gift-modal-element">
+      <button class="close-btn" id="close-gift"><i class="fa-solid fa-xmark"></i></button>
+      <button class="fullscreen-btn" id="fullscreen-gift"><i class="fa-solid fa-expand"></i></button>
+      <iframe src="style/gift/gift.html" frameborder="0" class="gift-iframe"></iframe>
+    </div>
+  </div>
+
+  <audio id="audio-player"></audio>
+  <audio id="pop-sound" src="style/pop.mp3"></audio>
+
+  <script src="style/script.js"></script>
+  <script> 
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const lockScreen = document.getElementById('lock-screen');
+    const mainContent = document.getElementById('main-content');
+    const numButtons = document.querySelectorAll('.num-btn[data-value]');
+    const deleteBtn = document.querySelector('.delete-btn');
+    const dots = document.querySelectorAll('.dot');
+
+
+/**
+ * ============================================================================= 
+ * 
+ * NGÀY GẶP NHAU LÀ 12/07. NHỚ CHƯA??. VẬY CŨNG KHÔNG NHỚ NỮA. CHIA TAY ĐI !!!
+ * 
+ * ==============================================================================
+ * **/ 
+
+    const MATKHAU = "0109";
+    let currentInput = "";
+
+    // Hàm cập nhật giao diện các dấu chấm
+    function updateDots() {
+        dots.forEach((dot, index) => {
+            if (index < currentInput.length) {
+                dot.classList.add('active'); // Thêm class active để tô đậm dấu chấm
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+    }
+
+    // Hàm kiểm tra mật khẩu
+    function checkPassword() {
+        if (currentInput === MATKHAU) {
+            // Hiệu ứng khi đúng mật khẩu
+            lockScreen.style.opacity = '0';
+            lockScreen.style.transition = '0.5s';
+            
+            setTimeout(() => {
+                lockScreen.style.display = 'none';
+                mainContent.classList.remove('main-content-hidden');
+                mainContent.classList.add('animate__animated', 'animate__fadeIn');
+            }, 500);
+        } else {
+            // Hiệu ứng rung khi sai mật khẩu
+            // Bắt riêng trường hợp nhập 0803
+              if (currentInput === "0803") {
+                  alert("Đúng là quà 8/3, nhưng mật khẩu là ngày quen nhau mà! Nhập lại đi má 😊");
+                  location.reload(); // Load lại trang ngay sau khi nhấn OK
+                return; // Dừng hàm tại đây để không chạy các lệnh bên dưới
+              }
+
+            const passDots = document.getElementById('pass-dots');
+            passDots.classList.add('shake');
+            
+            setTimeout(() => {
+                passDots.classList.remove('shake');
+                currentInput = "";
+                updateDots();
+            }, 500);
+        }
+    }
+
+    // Sự kiện khi bấm phím số
+    numButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            if (currentInput.length < 4) {
+                currentInput += button.getAttribute('data-value');
+                updateDots();
+                
+                if (currentInput.length === 4) {
+                    // Đợi một chút để người dùng thấy dấu chấm cuối cùng rồi mới kiểm tra
+                    setTimeout(checkPassword, 200);
+                }
+            }
+        });
+    });
+
+    // Sự kiện khi bấm nút xóa
+    deleteBtn.addEventListener('click', () => {
+        if (currentInput.length > 0) {
+            currentInput = currentInput.slice(0, -1);
+            updateDots();
+        }
+    });
+
+
+
+// 1. Khai báo danh sách bài hát kèm đường dẫn nhạc local
+    const songs = [
+        {
+            id: 1,
+            imgSrc: "style/sound/Anh (1).jpg",
+            audioPath: "style/sound/hotbeatfast.mp3", // Đường dẫn nhạc local của bạn
+            title: "A Thousand Years - Christina Perri",
+            artist: "Christina Perri"
+        },
+        {
+            id: 2,
+            imgSrc: "style/sound/Anh (2).jpg",
+            audioPath: "style/sound/Cant take my eyes of you - Aesthetic.mp3",
+            title: "Can't Take My Eyes Of You - Joseph Vincent",
+            artist: "Joseph Vincent"
+        },
+        {
+            id: 3,
+            imgSrc: "style/sound/Anh (3).jpg",
+            audioPath: "style/sound/Pink Sweat$ - At My Worst.mp3",
+            title: "At My Worst - Pink Sweat$",
+            artist: "Pink Sweat$"
+        },
+        {
+            id: 4,
+            imgSrc: "style/sound/Anh (4).jpg",
+            audioPath: "style/sound/Ed Sheeran - Perfect.mp3",
+            title: "Perfect - Ed Sheeran",
+            artist: "Ed Sheeran"
+        },
+        {
+            id: 5,
+            imgSrc: "style/sound/Anh (5).jpg",
+            audioPath: "style/sound/Maroon 5 - Sugar.mp3",
+            title: "Sugar - Maroon 5",
+            artist: "Maroon 5"
+        },
+        {
+            id: 6,
+            imgSrc: "style/sound/Anh (6).jpg",
+            audioPath: "style/sound/1000universe.mp3",
+            title: "A Thousand Years - Dr Strange",
+            artist: "Dr Strange"
+        }
+    ];
+
+
+    
+
+    // Các phần tử DOM cần thiết
+    const songListContainer = document.getElementById('song-list');
+    const audioPlayer = document.getElementById('audio-player');
+    const songTitleDisplay = document.getElementById('song-title');
+    const songArtistDisplay = document.getElementById('song-artist');
+    const albumArtDisplay = document.querySelector('#album-art img');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+
+    // 2. Hàm phát nhạc và cập nhật giao diện
+    function playSong(song, element) {
+        // Cập nhật nguồn nhạc
+        audioPlayer.src = song.audioPath;
+        
+        // Cập nhật thông tin trên trình phát (Player)
+        songTitleDisplay.innerText = song.title;
+        songArtistDisplay.innerText = song.artist;
+        albumArtDisplay.src = song.imgSrc;
+
+        // Xóa class 'active' ở tất cả các bài hát cũ
+        document.querySelectorAll('.song-item').forEach(item => item.classList.remove('active'));
+        
+        // Thêm class 'active' cho bài đang chọn
+        element.classList.add('active');
+
+        // Phát nhạc
+        audioPlayer.play();
+        
+        // Cập nhật icon nút Play thành Pause
+        playPauseBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+    }
+
+    // 3. Hàm render danh sách bài hát
+    function renderSongs() {
+        if (!songListContainer) return;
+
+        songListContainer.innerHTML = songs.map(song => `
+            <div class="song-item" data-id="${song.id}">
+                <img src="${song.imgSrc}" alt="${song.title}">
+                <div class="song-item-info">
+                    <div class="song-item-title">${song.title}</div>
+                </div>
+            </div>
+        `).join('');
+
+        // 4. Gán sự kiện Click cho từng item mới tạo ra
+        const songItems = document.querySelectorAll('.song-item');
+        songItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const songId = parseInt(item.getAttribute('data-id'));
+                const selectedSong = songs.find(s => s.id === songId);
+                playSong(selectedSong, item);
+            });
+        });
+
+
+        // ---------- THÊM PHẦN NÀY ĐỂ HIỂN THỊ BÀI MẶC ĐỊNH ----------
+        if (songs.length > 0 && songItems.length > 0) {
+            const defaultSong = songs[0]; // Lấy bài hát đầu tiên
+            
+            // Nạp nguồn nhạc và thông tin lên giao diện
+            audioPlayer.src = defaultSong.audioPath;
+            songTitleDisplay.innerText = defaultSong.title;
+            songArtistDisplay.innerText = defaultSong.artist;
+            
+            // Kiểm tra xem thẻ img album art có tồn tại không trước khi gán
+            if (albumArtDisplay) {
+                albumArtDisplay.src = defaultSong.imgSrc;
+            }
+            
+            // Bật trạng thái active cho item đầu tiên trong danh sách
+            songItems[0].classList.add('active');
+        }
+        // ------------------------------------------------------------
+
+        // Tự động chuyển bài khi bài hát hiện tại kết thúc
+        audioPlayer.addEventListener('ended', () => {
+            // Tìm element của bài hát đang phát (dựa vào class active)
+            const currentActiveItem = document.querySelector('.song-item.active');
+            
+            if (currentActiveItem) {
+                // Lấy ID của bài hiện tại
+                const currentId = parseInt(currentActiveItem.getAttribute('data-id'));
+                
+                // Tìm vị trí của bài hiện tại trong mảng songs
+                const currentIndex = songs.findIndex(song => song.id === currentId);
+                
+                // Xác định bài tiếp theo (nếu là bài cuối thì quay vòng lại bài đầu tiên)
+                let nextIndex = currentIndex + 1;
+                if (nextIndex >= songs.length) {
+                    nextIndex = 0; 
+                }
+
+                // Lấy data bài tiếp theo và thẻ DOM tương ứng
+                const nextSong = songs[nextIndex];
+                const songItems = document.querySelectorAll('.song-item');
+                const nextElement = Array.from(songItems).find(
+                    item => parseInt(item.getAttribute('data-id')) === nextSong.id
+                );
+
+                // Gọi lại hàm playSong để phát bài mới
+                if (nextElement) {
+                    playSong(nextSong, nextElement);
+                }
+            }
+        });
+
+        // Lấy các nút điều khiển từ DOM
+    const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+
+    // Hàm chung để chuyển bài
+    function changeSong(direction) {
+        const currentActiveItem = document.querySelector('.song-item.active');
+        if (!currentActiveItem) return;
+
+        const currentId = parseInt(currentActiveItem.getAttribute('data-id'));
+        const currentIndex = songs.findIndex(song => song.id === currentId);
+        
+        let nextIndex;
+        if (direction === 'next') {
+            nextIndex = (currentIndex + 1) >= songs.length ? 0 : currentIndex + 1;
+        } else {
+            nextIndex = (currentIndex - 1) < 0 ? songs.length - 1 : currentIndex - 1;
+        }
+
+        const nextSong = songs[nextIndex];
+        const songItems = document.querySelectorAll('.song-item');
+        const nextElement = Array.from(songItems).find(
+            item => parseInt(item.getAttribute('data-id')) === nextSong.id
+        );
+
+        if (nextElement) {
+            playSong(nextSong, nextElement);
+        }
+    }
+
+    // Sự kiện khi nhấn nút Next
+    nextBtn.addEventListener('click', () => {
+        changeSong('next');
+    });
+
+    // Sự kiện khi nhấn nút Previous
+    prevBtn.addEventListener('click', () => {
+        changeSong('previous');
+    });
+    }
+
+    // Thực hiện sau 5 giây delay
+    setTimeout(() => {
+        renderSongs();
+        console.log("Danh sách nhạc đã sẵn sàng!");
+    }, 1000);
+
+
+
+});
+</script>
+</body>
+
+</html>
